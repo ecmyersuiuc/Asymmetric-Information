@@ -9,13 +9,13 @@ There are 3 .do files to clean an munge the data for analysis:
 2) ahs_clean_full.do: inputs raw American Housing Survey data for the years 1985--1995 and appends them with the data from survey years 1997--2009 (ahs_data_97_09.dta).  The output file ahs_full.dta contains AHS survey data for 1985--2009 for a subset of variables used in the analysis.
 3) data_build.do: combines the AHS data, fuel price data, and CPI data and creates the variables used in the analysis.
 
-Run each of these 3 files in turn to create the data sets used in the analysis: 1) renter_full.dta, 2) turnover_full.dta, 2) switch_oil.dta.  These are outputs of data_build.  The code is currently written to store these in the ``Clean Data'' folder.
+Run each of these 3 files in turn to create the data sets used in the analysis: 1) renter_full.dta, 2) turnover_full.dta, 2) switch_oil.dta.  These are outputs of data_build.  The code is currently written to store these in a folder titled "Clean Data".
 
 American Housing Survey Data
-The raw American Housing Survey data are located in the ``Raw Data'' folder
+The raw American Housing Survey data are located in the "Raw Data" folder.  Note, some files were compressed for the purposes of uploading them.  Check file paths in ahs_clean_97_09.do and ahs_clean_full.do after unzipping
 1) ahs85_95 contains the raw data for surveys 1985--1995
 2) ahsYYYY contains the raw data for survey year YYYY
-3) AHS_1997_SAMEHH_fix has a correction for the `samehh' variable for the survey year 1997.  The Readme.txt document in the folder was provided by staff of the AHS and explains the fix in detail.
+3) AHS_1997_SAMEHH_fix has a correction for the "samehh" variable for the survey year 1997.  The Readme.txt document in the folder was provided by staff of the AHS and explains the fix in detail.
 
 Fuel Prices and CPI:
 There are 9 publicly available data sets for creating fuel price measures.  The source of the data is listed here and discussed in the paper 
